@@ -2,11 +2,13 @@ package com.example.atiperarekrutacja;
 
 import com.example.atiperarekrutacja.GithubModels.GithubRepoDto;
 import com.example.atiperarekrutacja.GithubModels.GithubBranchDto;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
+@Service
 public class GithubClient {
 
     private final RestClient restClient;
